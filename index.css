@@ -1,0 +1,29 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*{
+    box-sizing: border-box;
+}
+hr{
+  size: "10";
+  color: gray;
+}
+.container{
+    background-color: yellowgreen;
+  height:385px;
+  width: 985px;
+  border: 10px solid blanchedalmond;
+  padding: 50px;
+  margin: 20px;
+
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  margin: 5px;
+}
