@@ -68,14 +68,15 @@ dob.addEventListener('input',function validateAge(event) {
     const dob = new Date(event.target.value)
     // Calculate the current date
     const today = new Date();
+    console.log(dob);
     
     // Calculate the age in years
     const ageInYears = today.getFullYear() - dob.getFullYear();
-  
     // Check if the age is between 18 and 55
-    if (ageInYears >= 18 || ageInYears <= 55) {
-      dobinput.setCustomValidity("Your age should be between 18 to 55.")
+    if (ageInYears < 18 || ageInYears > 55) {
+      dobinput.setCustomValidity("Your age should be between 18 to 55.");
     }else{
-        dobinput.setCustomValidity("")
+        dobinput.setCustomValidity("");
     }
   })
+
